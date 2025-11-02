@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lucrezia Dori – Designer / 3D Artist</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background-color: #ffffff;
+      color: #222;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      text-align: center;
+      padding: 80px 20px 40px;
+    }
+
+    header h1 {
+      font-size: 2.8rem;
+      font-weight: 600;
+      margin-bottom: 0.3rem;
+      letter-spacing: 1px;
+    }
+
+    header h2 {
+      font-size: 1.3rem;
+      font-weight: 300;
+      color: #666;
+      margin-top: 0;
+    }
+
+    .contact {
+      margin-top: 20px;
+      font-size: 0.95rem;
+      color: #444;
+    }
+
+    .button-download {
+      display: inline-block;
+      margin-top: 25px;
+      background-color: #d8e8d2;
+      color: #1a1a1a;
+      border: 1px solid #9ab88a;
+      padding: 0.7rem 1.4rem;
+      border-radius: 6px;
+      font-weight: 500;
+      text-decoration: none;
+      transition: all 0.25s ease;
+    }
+
+    .button-download:hover {
+      background-color: #c7dec0;
+      transform: translateY(-2px);
+    }
+
+    section {
+      max-width: 900px;
+      margin: 60px auto;
+      padding: 0 25px;
+      opacity: 0;
+      transform: translateY(40px);
+      transition: opacity 0.8s ease, transform 0.8s ease;
+    }
+
+    section.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    section h2 {
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-weight: 600;
+      font-size: 1.1rem;
+      border-bottom: 2px solid #c8d8c2;
+      padding-bottom: 8px;
+      margin-bottom: 25px;
+    }
+
+    section p, section li {
+      font-weight: 300;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    ul li {
+      margin-bottom: 10px;
+    }
+
+    a {
+      color: #5a7b5d;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .portfolio {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+      margin-top: 30px;
+    }
+
+    .portfolio-item {
+      border: 1px solid #e5e5e5;
+      border-radius: 10px;
+      overflow: hidden;
+      background-color: #fafafa;
+      transition: all 0.25s ease;
+    }
+
+    .portfolio-item:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+    }
+
+    .portfolio-item img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+    }
+
+    .portfolio-item p {
+      padding: 15px;
+      font-size: 0.95rem;
+      color: #333;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.85rem;
+      color: #777;
+      padding: 40px 10px;
+      margin-top: 60px;
+      border-top: 1px solid #eee;
+      opacity: 0;
+      transform: translateY(40px);
+      transition: opacity 0.8s ease, transform 0.8s ease;
+    }
+
+    footer.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Lucrezia Dori</h1>
+    <h2>Designer / 3D Artist</h2>
+    <p class="contact">
+      📞 339 3313592 · 📧 <a href="mailto:lucrezia.dori99@gmail.com">lucrezia.dori99@gmail.com</a><br>
+      📍 Cavriglia (AR) · 11/02/1999
+    </p>
+    <a href="Portfolio_Lucrezia_Dori.pdf" class="button-download" download>⬇️ Scarica il mio Portfolio</a>
+  </header>
+
+  <section>
+    <h2>Profilo personale</h2>
+    <p>
+      Designer con formazione artistica e accademica in Interior e Product Design. Appassionata di visualizzazione 3D e progettazione creativa, unisco precisione tecnica e sensibilità estetica per realizzare progetti funzionali e visivamente accattivanti.
+      Dotata di ottime capacità comunicative e relazionali, maturate anche attraverso la collaborazione con clienti internazionali, sono abituata a lavorare in team multidisciplinari e a gestire in autonomia l’intero processo creativo, dal concept alla presentazione finale.
+    </p>
+  </section>
+
+  <section>
+    <h2>Esperienze lavorative</h2>
+
+    <h3>3D Artist — LuceAtelier (2023 – Presente)</h3>
+    <ul>
+      <li>Modellazione e rendering 3D per progetti di interior design e architettura.</li>
+      <li>Utilizzo professionale di Autodesk 3ds Max e V-Ray come motore di rendering.</li>
+      <li>Post-produzione e fotoritocco con Adobe Photoshop.</li>
+      <li>Comunicazione diretta con clienti internazionali, prevalentemente in lingua inglese.</li>
+      <li>Collaborazione nella definizione di materiali, luci e atmosfere visive.</li>
+      <li>Profilo Instagram dello studio: 
+        <a href="https://www.instagram.com/_luce.atelier/" target="_blank">@_luce.atelier</a>
+      </li>
+    </ul>
+
+    <h3>Servizio Civile — Comune di Cavriglia (2021 – 2022)</h3>
+    <ul>
+      <li>Gestione e distribuzione di buoni pasto per i servizi scolastici.</li>
+      <li>Supporto agli uffici nella registrazione e gestione dei dati del settore istruzione.</li>
+      <li>Assistenza ai cittadini e alle famiglie in condizioni di disagio.</li>
+    </ul>
+
+    <h3>Collaboratore scolastico — Scuole del Valdarno (2020 – 2021)</h3>
+    <ul>
+      <li>Supporto alle attività didattiche e logistiche all’interno dell’istituto.</li>
+      <li>Assistenza al personale docente e agli studenti.</li>
+    </ul>
+
+    <h3>Stage — Area Associati, Montevarchi (2019)</h3>
+    <ul>
+      <li>Archiviazione e digitalizzazione di materiali tecnici relativi alla costruzione edilizia.</li>
+      <li>Supporto alla realizzazione di un filmato illustrativo sulle fasi di edificazione.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Istruzione e formazione</h2>
+    <ul>
+      <li><strong>Diploma Accademico di I Livello in Design</strong> (2019–2023) – Accademia di Belle Arti di Firenze<br>
+        Scuola di Progettazione Artistica per l’Impresa, Corso di Interior Design — <strong>Voto: 110 e lode / 110</strong></li>
+      <li><strong>Diploma di Maturità Artistica</strong> (2017–2018) – Liceo Artistico Piero della Francesca, Arezzo<br>
+        Indirizzo Architettura e Ambiente — <strong>Voto: 98 / 100</strong></li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Portfolio</h2>
+    <div class="portfolio">
+      <div class="portfolio-item">
+        <img src="images/progetto1.jpg" alt="Progetto 1">
+        <p><strong>Rendering Interni</strong><br>Modellazione e render fotorealistico di un ambiente residenziale realizzato con 3ds Max e V-Ray.</p>
+      </div>
+      <div class="portfolio-item">
+        <img src="images/progetto2.jpg" alt="Progetto 2">
+        <p><strong>Concept Spazio Commerciale</strong><br>Visual concept con studio luci e materiali, post-produzione in Photoshop.</p>
+      </div>
+      <div class="portfolio-item">
+        <img src="images/progetto3.jpg" alt="Progetto 3">
+        <p><strong>Studio Materiali e Illuminazione</strong><br>Progetto sperimentale per cliente internazionale focalizzato su texture e riflessi dinamici.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 Lucrezia Dori — Tutti i diritti riservati
+  </footer>
+
+  <script>
+    const elements = document.querySelectorAll('section, footer');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.15 });
+
+    elements.forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>
