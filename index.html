@@ -51,28 +51,24 @@
       text-decoration: underline;
     }
 
-    /* Icona YouTube verde salvia centrata */
-    .youtube-container {
-      text-align: center;
-      margin-top: 15px;
-    }
-
-    .youtube-link {
+    /* Icona YouTube verde salvia */
+    .youtube-icon {
       display: inline-block;
-      width: 48px;
-      height: 34px;
+      width: 45px;
+      height: 32px;
+      background-color: #8fae91; /* verde salvia */
       border-radius: 8px;
-      background-color: #5a7b5d;
       position: relative;
-      transition: all 0.25s ease;
+      margin-top: 15px;
+      transition: background-color 0.3s ease, transform 0.2s ease;
     }
 
-    .youtube-link::before {
+    .youtube-icon::before {
       content: "";
       position: absolute;
       top: 50%;
       left: 50%;
-      transform: translate(-45%, -50%);
+      transform: translate(-40%, -50%);
       width: 0;
       height: 0;
       border-left: 10px solid #ffffff;
@@ -80,9 +76,13 @@
       border-bottom: 6px solid transparent;
     }
 
-    .youtube-link:hover {
+    .youtube-icon:hover {
       background-color: #7da480;
       transform: scale(1.05);
+    }
+
+    .youtube-container {
+      text-align: center;
     }
 
     section {
@@ -102,6 +102,7 @@
     ul { list-style: none; padding: 0; }
     li { margin-bottom: 10px; }
 
+    /* PORTFOLIO */
     #portfolio {
       background-color: #f9f9f7;
       padding: 70px 0;
@@ -179,25 +180,47 @@
       📍 Cavriglia (AR) · 19/02/1999
     </p>
 
+    <!-- Icona YouTube centrata -->
     <div class="youtube-container">
-      <a href="https://www.youtube.com/@lucreziadori4895" target="_blank" class="youtube-link" title="YouTube"></a>
+      <a href="https://www.youtube.com/@lucreziadori4895" target="_blank" class="youtube-icon" title="YouTube"></a>
     </div>
   </header>
 
-  <!-- resto del contenuto invariato -->
   <section>
     <h2>Profilo personale</h2>
     <p>Designer con formazione artistica e accademica in Interior e Product Design. Appassionata di visualizzazione 3D e progettazione creativa, unisco precisione tecnica e sensibilità estetica per realizzare progetti funzionali e visivamente accattivanti.</p>
   </section>
 
-  <!-- (il resto delle sezioni portfolio, esperienze ecc. rimane identico alla versione precedente) -->
+  <section>
+    <h2>Esperienze lavorative</h2>
+    <h3>3D Artist — LuceAtelier (2023 – Presente)</h3>
+    <ul>
+      <li>Modellazione e rendering 3D per progetti di interior design e architettura.</li>
+      <li>Utilizzo di 3ds Max e V-Ray come motore di rendering.</li>
+      <li>Profilo Instagram dello studio: <a href="https://www.instagram.com/_luce.atelier/" target="_blank">@_luce.atelier</a></li>
+    </ul>
+  </section>
 
-  <footer>
-    © 2025 Lucrezia Dori – Tutti i diritti riservati
-  </footer>
-</body>
-</html>
+  <section>
+    <h2>Istruzione</h2>
+    <ul>
+      <li><strong>Diploma Accademico in Design</strong> – Accademia di Belle Arti di Firenze (2019–2023) — <strong>110 e lode</strong></li>
+      <li><strong>Diploma di Maturità Artistica</strong> – Liceo Artistico “Piero della Francesca”, Arezzo — <strong>98/100</strong></li>
+    </ul>
+  </section>
 
+  <!-- ===================== -->
+  <!--       PORTFOLIO      -->
+  <!-- ===================== -->
+  <section id="portfolio">
+    <div style="max-width: 1100px; margin: 0 auto; padding: 0 20px;">
+      <h2 style="text-align:center; font-size:2rem; margin-bottom:50px;">Portfolio</h2>
+
+      <!-- (contenuto portfolio invariato) -->
+      <!-- ... -->
+
+    </div>
+  </section>
 
   <footer>
     © 2025 Lucrezia Dori – Tutti i diritti riservati
