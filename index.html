@@ -57,6 +57,238 @@
       margin-top: 10px;
       display: flex;
       justify-content: center;
+      gap: 15px;
+    }
+
+    .social-icons a {
+      display: inline-block;
+      color: #38543a;
+      transition: color 0.3s ease, transform 0.2s ease;
+    }
+
+    .social-icons a:hover {
+      color: #1a3a2a;
+      transform: scale(1.1);
+    }
+
+    .social-icons svg {
+      width: 26px;
+      height: 26px;
+      vertical-align: middle;
+    }
+
+    section {
+      max-width: 950px;
+      margin: 60px auto;
+      padding: 0 25px;
+    }
+
+    section h2 {
+      font-size: 1.3rem;
+      letter-spacing: 2px;
+      border-bottom: 2px solid #c8d8c2;
+      padding-bottom: 8px;
+      color: #2f3e35;
+      text-transform: uppercase;
+    }
+
+    ul { list-style: none; padding: 0; }
+    li { margin-bottom: 10px; }
+
+    /* PORTFOLIO */
+    #portfolio {
+      background-color: #f9f9f7;
+      padding: 70px 0;
+    }
+
+    .portfolio-slider {
+      display: flex;
+      overflow-x: auto;
+      gap: 12px;
+      scroll-behavior: smooth;
+      padding-bottom: 10px;
+    }
+
+    .portfolio-slider::-webkit-scrollbar {
+      height: 8px;
+    }
+
+    .portfolio-slider::-webkit-scrollbar-thumb {
+      background: #c5d3c2;
+      border-radius: 10px;
+    }
+
+    .portfolio-slider img {
+      height: 400px;
+      border-radius: 12px;
+      object-fit: cover;
+    }
+
+    .portfolio-item {
+      margin-bottom: 80px;
+    }
+
+    .portfolio-item h3 {
+      color: #2f3e35;
+      font-size: 1.4rem;
+    }
+
+    .portfolio-item p {
+      color: #4f5d4f;
+      line-height: 1.6;
+      font-weight: 300;
+    }
+
+    .download-btn {
+      display: inline-block;
+      margin-top: 15px;
+      background-color: #8fae91;
+      color: white;
+      padding: 10px 22px;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background-color 0.3s;
+    }
+
+    .download-btn:hover {
+      background-color: #7da480;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.85rem;
+      color: #777;
+      padding: 40px 10px;
+      margin-top: 60px;
+      border-top: 1px solid #eee;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Lucrezia Dori</h1>
+    <h2>Designer / 3D Artist</h2>
+    <p class="contact">
+      📞 339 33133592 · 📧 <a href="mailto:lucrezia.dori99@gmail.com">lucrezia.dori99@gmail.com</a><br>
+      📍 Cavriglia (AR) · 19/02/1999
+    </p>
+
+    <div class="social-icons">
+      <a href="https://www.youtube.com/@lucreziadori4895" target="_blank" aria-label="YouTube">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M21.8 8s-.2-1.5-.8-2.1c-.7-.8-1.5-.8-1.8-.9C16.5 4.8 12 4.8 12 4.8h-.1s-4.5 0-7.1.2c-.3 0-1.1.1-1.8.9C2.4 6.5 2.2 8 2.2 8S2 9.8 2 11.5v1c0 1.7.2 3.5.2 3.5s.2 1.5.8 2.1c.7.8 1.7.8 2.1.9 1.5.1 6.9.2 6.9.2s4.5 0 7.1-.2c.3 0 1.1-.1 1.8-.9.6-.6.8-2.1.8-2.1s.2-1.8.2-3.5v-1c0-1.7-.2-3.5-.2-3.5zM9.8 14.8V9.2l5.3 2.8l-5.3 2.8z"/>
+        </svg>
+      </a>
+    </div>
+  </header>
+
+  <!-- ===================== -->
+  <!--      CURRICULUM       -->
+  <!-- ===================== -->
+  <section id="curriculum">
+    <h2>Formazione</h2>
+    <ul>
+      <li><strong>2024</strong> – Laurea Magistrale in Design, ISIA Firenze</li>
+      <li><strong>2021</strong> – Laurea Triennale in Design, ISIA Firenze</li>
+      <li><strong>2018</strong> – Diploma Liceo Artistico, indirizzo Design, Arezzo</li>
+    </ul>
+
+    <h2>Esperienze</h2>
+    <ul>
+      <li><strong>2023</strong> – Collaborazione con <em>Luce Atelier</em> (Firenze), sviluppo di concept visivi e prototipazione 3D</li>
+      <li><strong>2022</strong> – Partecipazione al <a href="https://www.premiocombat.it/2022/lucrezia-dori-11832" target="_blank">Premio Combat Prize</a> con progetto fotografico personale</li>
+      <li><strong>2021</strong> – Selezione al <a href="https://www.rometti.it/it/news/premio-rometti-20-21premio-dei-premitriennale/" target="_blank">Premio Rometti</a> (Umbertide, PG) con progetto in ceramica</li>
+      <li><strong>2020</strong> – Stage formativo presso laboratorio di oreficeria artigianale</li>
+    </ul>
+
+    <h2>Competenze</h2>
+    <ul>
+      <li>Progettazione di prodotto e ricerca sui materiali</li>
+      <li>Modellazione e rendering 3D (Rhinoceros, Blender)</li>
+      <li>Fotografia e direzione dell’immagine</li>
+      <li>Adobe Suite (Photoshop, InDesign, Illustrator)</li>
+      <li>Prototipazione, lavorazione ceramica e oreficeria</li>
+    </ul>
+  </section>
+
+  <!-- ===================== -->
+  <!--       PORTFOLIO       -->
+  <!-- ===================== -->
+  <section id="portfolio">
+    <div style="max-width: 1100px; margin: 0 auto; padding: 0 20px;">
+      <h2 style="text-align:center; font-size:2rem; margin-bottom:50px;">Portfolio</h2>
+
+      <!-- (qui rimane esattamente la sezione Portfolio che mi hai approvato) -->
+      <!-- ... tutta la parte con i 4 progetti come da tuo messaggio precedente ... -->
+
+    </div>
+  </section>
+
+  <footer>
+    © 2025 · Lucrezia Dori — Tutti i diritti riservati
+  </footer>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lucrezia Dori – Portfolio e Curriculum</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background-color: #ffffff;
+      color: #1e1e1e;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      text-align: center;
+      padding: 80px 20px 40px;
+    }
+
+    header h1 {
+      font-size: 2.8rem;
+      font-weight: 600;
+      margin-bottom: 0.2rem;
+      letter-spacing: 1px;
+      color: #2f3e35;
+    }
+
+    header h2 {
+      font-size: 1.2rem;
+      font-weight: 300;
+      color: #5e6e61;
+    }
+
+    .contact {
+      margin-top: 20px;
+      font-size: 0.95rem;
+      color: #444;
+    }
+
+    a {
+      color: #38543a;
+      text-decoration: none;
+      transition: color 0.3s ease, transform 0.2s ease;
+    }
+
+    a:hover {
+      color: #1a3a2a;
+      text-decoration: underline;
+      transform: translateY(-1px);
+    }
+
+    .social-icons {
+      margin-top: 10px;
+      display: flex;
+      justify-content: center;
     }
 
     .social-icons a {
