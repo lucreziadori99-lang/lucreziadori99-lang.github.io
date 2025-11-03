@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lucrezia Dori – Designer / 3D Artist</title>
+  <title>Lucrezia Dori – Portfolio e Curriculum</title>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
   <style>
     body {
       font-family: 'Montserrat', sans-serif;
       background-color: #ffffff;
-      color: #222;
+      color: #1e1e1e;
       margin: 0;
       padding: 0;
       line-height: 1.6;
@@ -24,76 +24,21 @@
     header h1 {
       font-size: 2.8rem;
       font-weight: 600;
-      margin-bottom: 0.3rem;
+      margin-bottom: 0.2rem;
       letter-spacing: 1px;
+      color: #2f3e35;
     }
 
     header h2 {
-      font-size: 1.3rem;
+      font-size: 1.2rem;
       font-weight: 300;
-      color: #666;
-      margin-top: 0;
+      color: #5e6e61;
     }
 
     .contact {
       margin-top: 20px;
       font-size: 0.95rem;
       color: #444;
-    }
-
-    .button-download {
-      display: inline-block;
-      margin-top: 25px;
-      background-color: #d8e8d2;
-      color: #1a1a1a;
-      border: 1px solid #9ab88a;
-      padding: 0.7rem 1.4rem;
-      border-radius: 6px;
-      font-weight: 500;
-      text-decoration: none;
-      transition: all 0.25s ease;
-    }
-
-    .button-download:hover {
-      background-color: #c7dec0;
-      transform: translateY(-2px);
-    }
-
-    section {
-      max-width: 900px;
-      margin: 60px auto;
-      padding: 0 25px;
-      opacity: 0;
-      transform: translateY(40px);
-      transition: opacity 0.8s ease, transform 0.8s ease;
-    }
-
-    section.visible {
-      opacity: 1;
-      transform: translateY(0);
-    }
-
-    section h2 {
-      text-transform: uppercase;
-      letter-spacing: 2px;
-      font-weight: 600;
-      font-size: 1.1rem;
-      border-bottom: 2px solid #c8d8c2;
-      padding-bottom: 8px;
-      margin-bottom: 25px;
-    }
-
-    section p, section li {
-      font-weight: 300;
-    }
-
-    ul {
-      list-style: none;
-      padding-left: 0;
-    }
-
-    ul li {
-      margin-bottom: 10px;
     }
 
     a {
@@ -105,36 +50,79 @@
       text-decoration: underline;
     }
 
-    .portfolio {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 25px;
-      margin-top: 30px;
+    section {
+      max-width: 950px;
+      margin: 60px auto;
+      padding: 0 25px;
     }
 
-    .portfolio-item {
-      border: 1px solid #e5e5e5;
+    section h2 {
+      font-size: 1.3rem;
+      letter-spacing: 2px;
+      border-bottom: 2px solid #c8d8c2;
+      padding-bottom: 8px;
+      color: #2f3e35;
+    }
+
+    ul { list-style: none; padding: 0; }
+    li { margin-bottom: 10px; }
+
+    /* PORTFOLIO */
+    #portfolio {
+      background-color: #f9f9f7;
+      padding: 70px 0;
+    }
+
+    .portfolio-slider {
+      display: flex;
+      overflow-x: auto;
+      gap: 12px;
+      scroll-behavior: smooth;
+      padding-bottom: 10px;
+    }
+
+    .portfolio-slider::-webkit-scrollbar {
+      height: 8px;
+    }
+    .portfolio-slider::-webkit-scrollbar-thumb {
+      background: #c5d3c2;
       border-radius: 10px;
-      overflow: hidden;
-      background-color: #fafafa;
-      transition: all 0.25s ease;
     }
 
-    .portfolio-item:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 4px 8px rgba(0,0,0,0.08);
-    }
-
-    .portfolio-item img {
-      width: 100%;
-      height: 220px;
+    .portfolio-slider img {
+      height: 400px;
+      border-radius: 12px;
       object-fit: cover;
     }
 
+    .portfolio-item {
+      margin-bottom: 80px;
+    }
+
+    .portfolio-item h3 {
+      color: #2f3e35;
+      font-size: 1.4rem;
+    }
+
     .portfolio-item p {
-      padding: 15px;
-      font-size: 0.95rem;
-      color: #333;
+      color: #4f5d4f;
+      line-height: 1.6;
+      font-weight: 300;
+    }
+
+    .download-btn {
+      display: inline-block;
+      margin-top: 15px;
+      background-color: #8fae91;
+      color: white;
+      padding: 10px 22px;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background-color 0.3s;
+    }
+
+    .download-btn:hover {
+      background-color: #7da480;
     }
 
     footer {
@@ -144,19 +132,11 @@
       padding: 40px 10px;
       margin-top: 60px;
       border-top: 1px solid #eee;
-      opacity: 0;
-      transform: translateY(40px);
-      transition: opacity 0.8s ease, transform 0.8s ease;
-    }
-
-    footer.visible {
-      opacity: 1;
-      transform: translateY(0);
     }
   </style>
 </head>
-<body>
 
+<body>
   <header>
     <h1>Lucrezia Dori</h1>
     <h2>Designer / 3D Artist</h2>
@@ -164,76 +144,97 @@
       📞 339 33133592 · 📧 <a href="mailto:lucrezia.dori99@gmail.com">lucrezia.dori99@gmail.com</a><br>
       📍 Cavriglia (AR) · 19/02/1999
     </p>
-    <a href="Portfolio_Lucrezia_Dori.pdf" class="button-download" download>⬇️ Scarica il mio Portfolio</a>
   </header>
 
   <section>
     <h2>Profilo personale</h2>
-    <p>
-      Designer con formazione artistica e accademica in Interior e Product Design. Appassionata di visualizzazione 3D e progettazione creativa, unisco precisione tecnica e sensibilità estetica per realizzare progetti funzionali e visivamente accattivanti.
-      Dotata di ottime capacità comunicative e relazionali, maturate anche attraverso la collaborazione con clienti internazionali, sono abituata a lavorare in team multidisciplinari e a gestire in autonomia l’intero processo creativo, dal concept alla presentazione finale.
-    </p>
+    <p>Designer con formazione artistica e accademica in Interior e Product Design. Appassionata di visualizzazione 3D e progettazione creativa, unisco precisione tecnica e sensibilità estetica per realizzare progetti funzionali e visivamente accattivanti.</p>
   </section>
 
   <section>
     <h2>Esperienze lavorative</h2>
-
     <h3>3D Artist — LuceAtelier (2023 – Presente)</h3>
     <ul>
       <li>Modellazione e rendering 3D per progetti di interior design e architettura.</li>
-      <li>Utilizzo professionale di Autodesk 3ds Max e V-Ray come motore di rendering.</li>
-      <li>Post-produzione e fotoritocco con Adobe Photoshop.</li>
-      <li>Comunicazione diretta con clienti internazionali, prevalentemente in lingua inglese.</li>
-      <li>Collaborazione nella definizione di materiali, luci e atmosfere visive.</li>
-      <li>Profilo Instagram dello studio: 
-        <a href="https://www.instagram.com/_luce.atelier/" target="_blank">@_luce.atelier</a>
-      </li>
-    </ul>
-
-    <h3>Servizio Civile — Comune di Cavriglia (2021 – 2022)</h3>
-    <ul>
-      <li>Gestione e distribuzione di buoni pasto per i servizi scolastici.</li>
-      <li>Supporto agli uffici nella registrazione e gestione dei dati del settore istruzione.</li>
-      <li>Assistenza ai cittadini e alle famiglie in condizioni di disagio.</li>
-    </ul>
-
-    <h3>Collaboratore scolastico — Scuole del Valdarno (2020 – 2021)</h3>
-    <ul>
-      <li>Supporto alle attività didattiche e logistiche all’interno dell’istituto.</li>
-      <li>Assistenza al personale docente e agli studenti.</li>
-    </ul>
-
-    <h3>Stage — Area Associati, Montevarchi (2019)</h3>
-    <ul>
-      <li>Archiviazione e digitalizzazione di materiali tecnici relativi alla costruzione edilizia.</li>
-      <li>Supporto alla realizzazione di un filmato illustrativo sulle fasi di edificazione.</li>
+      <li>Utilizzo di 3ds Max e V-Ray come motore di rendering.</li>
+      <li>Profilo Instagram dello studio: <a href="https://www.instagram.com/_luce.atelier/" target="_blank">@_luce.atelier</a></li>
     </ul>
   </section>
 
   <section>
-    <h2>Istruzione e formazione</h2>
+    <h2>Istruzione</h2>
     <ul>
-      <li><strong>Diploma Accademico di I Livello in Design</strong> (2019–2023) – Accademia di Belle Arti di Firenze<br>
-        Scuola di Progettazione Artistica per l’Impresa, Corso di Interior Design — <strong>Voto: 110 e lode / 110</strong></li>
-      <li><strong>Diploma di Maturità Artistica</strong> (2017–2018) – Liceo Artistico Piero della Francesca, Arezzo<br>
-        Indirizzo Architettura e Ambiente — <strong>Voto: 98 / 100</strong></li>
+      <li><strong>Diploma Accademico in Design</strong> – Accademia di Belle Arti di Firenze (2019–2023) — <strong>110 e lode</strong></li>
+      <li><strong>Diploma di Maturità Artistica</strong> – Liceo Artistico “Piero della Francesca”, Arezzo — <strong>98/100</strong></li>
     </ul>
   </section>
 
-  <section>
-    <h2>Portfolio</h2>
-    <div class="portfolio">
+  <!-- ===================== -->
+  <!--       PORTFOLIO      -->
+  <!-- ===================== -->
+  <section id="portfolio">
+    <div style="max-width: 1100px; margin: 0 auto; padding: 0 20px;">
+      <h2 style="text-align:center; font-size:2rem; margin-bottom:50px;">Portfolio</h2>
+
+      <!-- PROGETTO TESI -->
       <div class="portfolio-item">
-        <img src="images/progetto1.jpg" alt="Progetto 1">
-        <p><strong>Rendering Interni</strong><br>Modellazione e render fotorealistico di un ambiente residenziale realizzato con 3ds Max e V-Ray.</p>
+        <h3>Progetto di Tesi — Design come pratica di riparazione</h3>
+        <div class="portfolio-slider">
+          <img src="progetto_tesi/Cover.jpg" alt="Cover tesi">
+        </div>
+        <p>La mia tesi esplora il design come pratica di riparazione, intesa non solo in senso tecnico ma anche sociale, culturale ed ecologica. Analizzo come materiali, processi e oggetti possano creare un ponte tra l’uomo e l’ambiente, ispirandosi ai cicli naturali di nascita, trasformazione e rigenerazione.</p>
+        <a href="progetto_tesi/lucrezia_dori_tesi.pdf" class="download-btn" download>📄 Scarica la tesi</a>
       </div>
+
+      <!-- PROGETTO FOTOGRAFIA -->
       <div class="portfolio-item">
-        <img src="images/progetto2.jpg" alt="Progetto 2">
-        <p><strong>Concept Spazio Commerciale</strong><br>Visual concept con studio luci e materiali, post-produzione in Photoshop.</p>
+        <h3>Progetto Fotografico — Autoritratti e luce</h3>
+        <div class="portfolio-slider">
+          <img src="progetto1_fotografia/cover.jpg">
+          <img src="progetto1_fotografia/img2.jpg">
+          <img src="progetto1_fotografia/img3.jpg">
+          <img src="progetto1_fotografia/img4.jpg">
+          <img src="progetto1_fotografia/img5.jpg">
+          <img src="progetto1_fotografia/img6.jpg">
+          <img src="progetto1_fotografia/img9.jpg">
+          <img src="progetto1_fotografia/img10.jpg">
+          <img src="progetto1_fotografia/img12.jpg">
+          <img src="progetto1_fotografia/img13.jpg">
+          <img src="progetto1_fotografia/img14.jpg">
+        </div>
+        <p>Autoritratti in cui la luce del sole rimbalza su uno specchio generando riflessi completamente bianchi. Un non-colore che racchiude tutti i colori dello spettro.<br>
+        <em>“È forse perché con la sua indefinitezza, adombra i vuoti e le immensità disumane dell’universo…”</em> — <strong>Herman Melville, Moby Dick, cap. 42</strong><br>
+        Partecipazione al <a href="https://www.premiocombat.it/2022/lucrezia-dori-11832" target="_blank">Premio Combat Prize</a>.</p>
       </div>
+
+      <!-- PREMIO ROMETTI -->
       <div class="portfolio-item">
-        <img src="images/progetto3.jpg" alt="Progetto 3">
-        <p><strong>Studio Materiali e Illuminazione</strong><br>Progetto sperimentale per cliente internazionale focalizzato su texture e riflessi dinamici.</p>
+        <h3>Premio Rometti — Ceramica ispirata alla natura</h3>
+        <div class="portfolio-slider">
+          <img src="premio_rometti_ceramica/cover.jpg">
+          <img src="premio_rometti_ceramica/img1.jpg">
+          <img src="premio_rometti_ceramica/img3.jpg">
+          <img src="premio_rometti_ceramica/img4.jpg">
+          <img src="premio_rometti_ceramica/img5.jpg">
+          <img src="premio_rometti_ceramica/img6.jpg">
+        </div>
+        <p>Progetto realizzato per il bando Rometti, in Umbria. L’opera si ispira alle forme vegetali fotografate da Karl Blossfeldt, reinterpretando il fiore dell’equiseto come vaso tornito. La materia naturale dell’argilla diventa forma simbolica, un equilibrio tra artificio e natura.</p>
+      </div>
+
+      <!-- PROGETTO OREFICERIA -->
+      <div class="portfolio-item">
+        <h3>Progetto di Oreficeria — Forme naturali marine</h3>
+        <div class="portfolio-slider">
+          <img src="progetto2_oreficeria/cover.jpg">
+          <img src="progetto2_oreficeria/img1.jpg">
+          <img src="progetto2_oreficeria/img2.jpg">
+          <img src="progetto2_oreficeria/img3.jpg">
+          <img src="progetto2_oreficeria/img4.jpg">
+          <img src="progetto2_oreficeria/img5.jpg">
+          <img src="progetto2_oreficeria/img6.jpg">
+          <img src="progetto2_oreficeria/img7.jpg">
+        </div>
+        <p>Serie di anelli realizzati a mano con la tecnica della cera persa, ispirati a forme organiche marine. Ogni pezzo rappresenta un piccolo ecosistema di materia e luce.</p>
       </div>
     </div>
   </section>
@@ -241,83 +242,5 @@
   <footer>
     © 2025 Lucrezia Dori — Tutti i diritti riservati
   </footer>
-
-  <script>
-    const elements = document.querySelectorAll('section, footer');
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
-        }
-      });
-    }, { threshold: 0.15 });
-
-    elements.forEach(el => observer.observe(el));
-  </script>
-<!-- ===================== -->
-<!--      PORTFOLIO        -->
-<!-- ===================== -->
-<section id="portfolio" style="padding: 60px 0; background-color: #f9f9f7;">
-  <div style="max-width: 1100px; margin: 0 auto; padding: 0 20px;">
-    <h2 style="font-size: 2rem; color: #2f3e35; margin-bottom: 40px; text-align: center;">Portfolio</h2>
-
-    <!-- PROGETTO TESI -->
-    <div style="margin-bottom: 80px;">
-      <h3 style="font-size: 1.5rem; color: #2f3e35;">Progetto di Tesi — Design come pratica di riparazione</h3>
-      <div class="portfolio-slider" style="display: flex; overflow-x: auto; gap: 10px; scroll-behavior: smooth;">
-        <img src="progetto_tesi/Cover.jpg" alt="Cover Tesi" style="height: 400px; border-radius: 12px;">
-      </div>
-      <p style="margin-top: 15px; color: #4f5d4f; line-height: 1.6;">
-        La mia tesi esplora il design come pratica di riparazione, intesa non solo in senso tecnico ma anche sociale, culturale ed ecologica. Analizzo come materiali, processi e oggetti possano creare un ponte tra l’uomo e l’ambiente, ispirandosi ai cicli naturali di nascita, trasformazione e rigenerazione. Il lavoro propone il design come atto di cura, capace di ricucire relazioni e promuovere sostenibilità attraverso pratiche attente ai contesti e alle comunità.
-      </p>
-      <a href="progetto_tesi/tesi_Lucrezia_Dori.pdf" download
-         style="display: inline-block; margin-top: 15px; padding: 10px 20px; background-color: #8fae91; color: white; border-radius: 8px; text-decoration: none; transition: background-color 0.3s;">
-         📄 Scarica la tesi
-      </a>
-    </div>
-
-    <!-- PROGETTO FOTOGRAFICO -->
-    <div style="margin-bottom: 80px;">
-      <h3 style="font-size: 1.5rem; color: #2f3e35;">Progetto Fotografico — Autoritratti e luce</h3>
-      <div class="portfolio-slider" style="display: flex; overflow-x: auto; gap: 10px; scroll-behavior: smooth;">
-        <img src="progetto_fotografia/IMG1.jpg" alt="Fotografia 1" style="height: 400px; border-radius: 12px;">
-        <img src="progetto_fotografia/IMG2.jpg" alt="Fotografia 2" style="height: 400px; border-radius: 12px;">
-        <img src="progetto_fotografia/IMG3.jpg" alt="Fotografia 3" style="height: 400px; border-radius: 12px;">
-        <!-- puoi aggiungere altre IMG4, IMG5, ecc. -->
-      </div>
-      <p style="margin-top: 15px; color: #4f5d4f; line-height: 1.6;">
-        Autoritratti realizzati utilizzando specchi per riflettere la luce naturale. La luce del sole rimbalza e genera riflessi completamente bianchi: un non-colore che racchiude tutti i colori dello spettro.
-        <br><em>“È forse perché con la sua indefinitezza, adombra i vuoti e le immensità disumane dell’universo…”</em> — <strong>Herman Melville, Moby Dick, cap. 42</strong>
-        <br>Le opere hanno partecipato al <a href="https://www.premiocombat.it/2022/lucrezia-dori-11832" target="_blank" style="color: #6b8e75;">Premio Combat Prize</a>.
-      </p>
-    </div>
-
-    <!-- PREMIO ROMETTI -->
-    <div style="margin-bottom: 80px;">
-      <h3 style="font-size: 1.5rem; color: #2f3e35;">Premio Rometti — Ceramica ispirata alla natura</h3>
-      <div class="portfolio-slider" style="display: flex; overflow-x: auto; gap: 10px; scroll-behavior: smooth;">
-        <img src="premio_rometti_ceramica/IMG1.jpg" alt="Ceramica 1" style="height: 400px; border-radius: 12px;">
-        <img src="premio_rometti_ceramica/IMG2.jpg" alt="Ceramica 2" style="height: 400px; border-radius: 12px;">
-        <img src="premio_rometti_ceramica/IMG3.jpg" alt="Ceramica 3" style="height: 400px; border-radius: 12px;">
-      </div>
-      <p style="margin-top: 15px; color: #4f5d4f; line-height: 1.6;">
-        Progetto realizzato per il bando Rometti, in Umbria. L’opera si ispira alle forme vegetali fotografate da Karl Blossfeldt, reinterpretando il fiore dell’equiseto come vaso tornito. La materia naturale dell’argilla diventa forma simbolica, un equilibrio tra artificio e natura.
-      </p>
-    </div>
-
-    <!-- PROGETTO OREFICERIA -->
-    <div style="margin-bottom: 80px;">
-      <h3 style="font-size: 1.5rem; color: #2f3e35;">Progetto di Oreficeria — Forme naturali marine</h3>
-      <div class="portfolio-slider" style="display: flex; overflow-x: auto; gap: 10px; scroll-behavior: smooth;">
-        <img src="progetto_oreficeria/IMG1.jpg" alt="Anello 1" style="height: 400px; border-radius: 12px;">
-        <img src="progetto_oreficeria/IMG2.jpg" alt="Anello 2" style="height: 400px; border-radius: 12px;">
-        <img src="progetto_oreficeria/IMG3.jpg" alt="Anello 3" style="height: 400px; border-radius: 12px;">
-      </div>
-      <p style="margin-top: 15px; color: #4f5d4f; line-height: 1.6;">
-        Serie di anelli realizzati a mano con la tecnica della cera persa, ispirati a forme organiche marine. Ogni pezzo rappresenta un piccolo ecosistema di materia e luce.
-      </p>
-    </div>
-  </div>
-</section>
 </body>
 </html>
