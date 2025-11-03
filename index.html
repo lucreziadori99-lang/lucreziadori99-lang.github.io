@@ -42,12 +42,40 @@
     }
 
     a {
-      color: #5a7b5d;
+      color: #38543a;
       text-decoration: none;
+      transition: color 0.3s ease, transform 0.2s ease;
     }
 
     a:hover {
+      color: #1a3a2a;
       text-decoration: underline;
+      transform: translateY(-1px);
+    }
+
+    .social-icons {
+      margin-top: 8px;
+      display: flex;
+      justify-content: center;
+      gap: 14px;
+    }
+
+    .social-icons a {
+      display: inline-block;
+      font-size: 1.3rem;
+      color: #38543a;
+      transition: color 0.3s ease, transform 0.2s ease;
+    }
+
+    .social-icons a:hover {
+      color: #1a3a2a;
+      transform: scale(1.1);
+    }
+
+    .social-icons svg {
+      width: 22px;
+      height: 22px;
+      vertical-align: middle;
     }
 
     section {
@@ -144,156 +172,20 @@
       📞 339 33133592 · 📧 <a href="mailto:lucrezia.dori99@gmail.com">lucrezia.dori99@gmail.com</a><br>
       📍 Cavriglia (AR) · 19/02/1999
     </p>
+
+    <div class="social-icons">
+      <!-- Instagram -->
+      <a href="https://www.instagram.com/_luce.atelier/" target="_blank" aria-label="Instagram">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M7.5 2h9A5.5 5.5 0 0 1 22 7.5v9A5.5 5.5 0 0 1 16.5 22h-9A5.5 5.5 0 0 1 2 16.5v-9A5.5 5.5 0 0 1 7.5 2zm0 2A3.5 3.5 0 0 0 4 7.5v9A3.5 3.5 0 0 0 7.5 20h9a3.5 3.5 0 0 0 3.5-3.5v-9A3.5 3.5 0 0 0 16.5 4h-9zM12 7a5 5 0 1 1 0 10a5 5 0 0 1 0-10zm0 2a3 3 0 1 0 0 6a3 3 0 0 0 0-6zm4.8-2.75a1 1 0 1 1 0 2a1 1 0 0 1 0-2z"/>
+        </svg>
+      </a>
+
+      <!-- YouTube -->
+      <a href="https://www.youtube.com/@lucreziadori4895" target="_blank" aria-label="YouTube">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M21.8 8s-.2-1.5-.8-2.1c-.7-.8-1.5-.8-1.8-.9C16.5 4.8 12 4.8 12 4.8h-.1s-4.5 0-7.1.2c-.3 0-1.1.1-1.8.9C2.4 6.5 2.2 8 2.2 8S2 9.8 2 11.5v1c0 1.7.2 3.5.2 3.5s.2 1.5.8 2.1c.7.8 1.7.8 2.1.9 1.5.1 6.9.2 6.9.2s4.5 0 7.1-.2c.3 0 1.1-.1 1.8-.9.6-.6.8-2.1.8-2.1s.2-1.8.2-3.5v-1c0-1.7-.2-3.5-.2-3.5zM9.8 14.8V9.2l5.3 2.8l-5.3 2.8z"/>
+        </svg>
+      </a>
+    </div>
   </header>
-
-  <section>
-    <h2>Profilo personale</h2>
-    <p>Designer con formazione artistica e accademica in Interior e Product Design. Appassionata di visualizzazione 3D e progettazione creativa, unisco precisione tecnica e sensibilità estetica per realizzare progetti funzionali e visivamente accattivanti.</p>
-  </section>
-
-  <section>
-    <h2>Esperienze lavorative</h2>
-    <h3>3D Artist — LuceAtelier (2023 – Presente)</h3>
-    <ul>
-      <li>Modellazione e rendering 3D per progetti di interior design e architettura.</li>
-      <li>Utilizzo di 3ds Max e V-Ray come motore di rendering.</li>
-      <li>Profilo Instagram dello studio: <a href="https://www.instagram.com/_luce.atelier/" target="_blank">@_luce.atelier</a></li>
-    </ul>
-  </section>
-
-  <section>
-    <h2>Istruzione</h2>
-    <ul>
-      <li><strong>Diploma Accademico in Design</strong> – Accademia di Belle Arti di Firenze (2019–2023) — <strong>110 e lode</strong></li>
-      <li><strong>Diploma di Maturità Artistica</strong> – Liceo Artistico “Piero della Francesca”, Arezzo — <strong>98/100</strong></li>
-    </ul>
-  </section>
-
- <!-- ===================== -->
-<!--       PORTFOLIO      -->
-<!-- ===================== -->
-<section id="portfolio">
-  <div style="max-width: 1100px; margin: 0 auto; padding: 0 20px;">
-    <h2 style="text-align:center; font-size:2rem; margin-bottom:50px;">Portfolio</h2>
-
-    <!-- PROGETTO TESI -->
-    <div class="portfolio-item">
-      <h3>Progetto di Tesi — Design come pratica di riparazione</h3>
-      <div class="portfolio-slider">
-        <img src="progetto_tesi/Cover.jpg" alt="Cover tesi">
-      </div>
-      <p>
-        La mia tesi esplora il <strong>design come pratica di riparazione</strong>, intesa non solo in senso tecnico, ma anche come processo sociale, culturale ed ecologico. 
-        Analizzo come materiali, processi e oggetti possano creare un ponte tra l’uomo e l’ambiente, 
-        ispirandosi ai cicli naturali di nascita, trasformazione e rigenerazione.
-      </p>
-      <p>
-        Il progetto propone il design come <em>atto di cura</em>, capace di ricucire relazioni e promuovere sostenibilità attraverso pratiche attente ai contesti e alle comunità. 
-        La ricerca si muove tra riflessione teorica e sperimentazione progettuale, individuando nel gesto del riparare un valore poetico e politico, 
-        un modo per comprendere la complessità del nostro tempo e generare nuove forme di equilibrio tra uomo e natura.
-      </p>
-      <a href="progetto_tesi/lucrezia_dori_tesi.pdf" class="download-btn" download>📄 Scarica la tesi</a>
-    </div>
-
-    <!-- PROGETTO FOTOGRAFIA -->
-    <div class="portfolio-item">
-      <h3>Progetto Fotografico — Autoritratti e Luce</h3>
-      <div class="portfolio-slider">
-        <img src="progetto1_fotografia/cover.jpg">
-        <img src="progetto1_fotografia/img2.jpg">
-        <img src="progetto1_fotografia/img3.jpg">
-        <img src="progetto1_fotografia/img4.jpg">
-        <img src="progetto1_fotografia/img5.jpg">
-        <img src="progetto1_fotografia/img6.jpg">
-        <img src="progetto1_fotografia/img9.jpg">
-        <img src="progetto1_fotografia/img10.jpg">
-        <img src="progetto1_fotografia/img12.jpg">
-        <img src="progetto1_fotografia/img13.jpg">
-        <img src="progetto1_fotografia/img14.jpg">
-      </div>
-      <p>
-        Il progetto nasce da una riflessione sulla <strong>radioestesia</strong> — una pratica antica che consiste nel tentare di percepire radiazioni o energie invisibili attraverso strumenti come il pendolo o la verga. 
-        Nata come ricerca sul campo dell’invisibile, la radioestesia evoca un gesto percettivo, un ascolto silenzioso e intuitivo della materia e della luce.
-      </p>
-      <p>
-        Attraverso una serie di <em>autoritratti</em>, utilizzo uno specchio come strumento per riflettere la luce del sole. 
-        Il riflesso, completamente bianco, diventa un <strong>non-colore</strong>, che però contiene in sé tutti i colori dello spettro. 
-        In stampa, il bianco si trasforma in assenza visiva, evocando un’immagine che esiste soltanto come presenza luminosa: 
-        un dialogo tra corpo, spazio e materia immateriale.
-      </p>
-      <p>
-        <em>
-          “È forse perché con la sua indefinitezza, adombra i vuoti e le immensità disumane dell’universo e, in tal modo, ci colpisce alle spalle con il pensiero dell’annullamento, 
-          quando contempliamo le bianche profondità della Via Lattea? 
-          O è forse perché, nella sua essenza, il bianco non è tanto un colore quanto l’assenza visibile del colore e, al tempo stesso, la fusione di tutti i colori; 
-          è forse per questi motivi che c’è una così muta vacuità, piena di significato, in un vasto paesaggio nevoso – 
-          un incolore onnicolore d’ateismo dal quale rifuggiamo?…”
-        </em><br>
-        — <strong>Herman Melville, Moby Dick, capitolo 42</strong>
-      </p>
-      <p>
-        Il progetto ha partecipato al 
-        <a href="https://www.premiocombat.it/2022/lucrezia-dori-11832" target="_blank" style="color:#1a3a2a; font-weight:600;">Premio Combat Prize</a>.
-      </p>
-    </div>
-
-    <!-- PREMIO ROMETTI -->
-    <div class="portfolio-item">
-      <h3>Premio Rometti — Ceramica ispirata alla natura</h3>
-      <div class="portfolio-slider">
-        <img src="premio_rometti_ceramica/cover.jpg">
-        <img src="premio_rometti_ceramica/img1.jpg">
-        <img src="premio_rometti_ceramica/img3.jpg">
-        <img src="premio_rometti_ceramica/img4.jpg">
-        <img src="premio_rometti_ceramica/img5.jpg">
-        <img src="premio_rometti_ceramica/img6.jpg">
-      </div>
-      <p>
-        Mi sono ispirata alle opere del fotografo tedesco <strong>Karl Blossfeldt</strong>, il quale indagava visivamente “la formula dei rapporti segreti tra l’arte e la natura”, 
-        presentando una natura intrinsecamente artistica, produttrice di forme organiche e funzionali. 
-        Le sue immagini svelano una ritmicità geometrica nella crescita delle piante, una logica interna che unisce estetica e necessità vitale.
-      </p>
-      <p>
-        Gli <em>equiseti</em> fotografati da Blossfeldt, isolati dal loro contesto naturale, diventano simboli di una forma ornamentale, 
-        di una natura che si manifesta come arte. 
-        La mia ricerca parte da qui: dal desiderio di recuperare l’elemento naturale per ricrearne l’equilibrio tra <strong>artificio e natura</strong>, 
-        tra oggettualità e organicità. 
-      </p>
-      <p>
-        Il materiale argilloso, modellato e lavorato con sottrazioni successive dopo la tornitura, traduce in forma le <em>dilatazioni e contrazioni</em> tipiche del fiore di equiseto. 
-        Ogni vaso diventa così la sintesi plastica della pianta, un oggetto che trattiene la memoria del gesto e della materia naturale da cui nasce.
-      </p>
-      <p>
-        Il progetto è stato realizzato per la partecipazione al 
-        <a href="https://www.rometti.it/it/news/premio-rometti-20-21premio-dei-premitriennale/" target="_blank" style="color:#1a3a2a; font-weight:600;">Premio Rometti</a>, 
-        promosso dall’azienda Rometti in Umbria.
-      </p>
-    </div>
-
-    <!-- PROGETTO OREFICERIA -->
-    <div class="portfolio-item">
-      <h3>Progetto di Oreficeria — Forme Marine</h3>
-      <div class="portfolio-slider">
-        <img src="progetto2_oreficeria/cover.jpg">
-        <img src="progetto2_oreficeria/img1.jpg">
-        <img src="progetto2_oreficeria/img2.jpg">
-        <img src="progetto2_oreficeria/img3.jpg">
-        <img src="progetto2_oreficeria/img4.jpg">
-        <img src="progetto2_oreficeria/img5.jpg">
-        <img src="progetto2_oreficeria/img6.jpg">
-        <img src="progetto2_oreficeria/img7.jpg">
-      </div>
-      <p>
-        Una collezione di anelli ispirati alle <strong>forme naturali marine</strong>, realizzati interamente a mano attraverso la tecnica della <em>cera persa</em>. 
-        Le strutture organiche, modellate come piccole sculture, evocano la morfologia di coralli e conchiglie, 
-        trasformando la materia in preziosa testimonianza del mondo sommerso.
-      </p>
-      <p>
-        Ogni pezzo è unico, modellato per catturare il ritmo naturale delle forme organiche, 
-        unendo la sensibilità del design contemporaneo alla manualità dell’artigianato orafa. 
-        Il progetto esplora il confine tra natura e artificio, corpo e superficie, oggetto e ornamento.
-      </p>
-    </div>
-
-  </div>
-</section>
