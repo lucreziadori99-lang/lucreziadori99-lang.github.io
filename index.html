@@ -3,72 +3,74 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lucrezia Dori – Portfolio</title>
+  <title>Lucrezia Dori – Portfolio e Curriculum</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: "Helvetica Neue", Arial, sans-serif;
-      background-color: #f7f8f5;
-      color: #333;
+      font-family: 'Montserrat', sans-serif;
+      background-color: #ffffff;
+      color: #1e1e1e;
       margin: 0;
       padding: 0;
       line-height: 1.6;
+      scroll-behavior: smooth;
     }
 
     header {
       text-align: center;
-      padding: 50px 20px 20px;
+      padding: 80px 20px 40px;
     }
 
-    h1 {
-      font-size: 2.4rem;
+    header h1 {
+      font-size: 2.8rem;
+      font-weight: 600;
+      margin-bottom: 0.2rem;
       letter-spacing: 1px;
-      margin-bottom: 5px;
-      color: #5e715b;
+      color: #2f3e35;
     }
 
-    h2 {
-      font-weight: 400;
-      color: #7b8e7c;
-      margin-top: 0;
+    header h2 {
+      font-size: 1.2rem;
+      font-weight: 300;
+      color: #5e6e61;
     }
 
     .contact {
+      margin-top: 20px;
       font-size: 0.95rem;
       color: #444;
     }
 
-    .contact a {
-      color: #5e715b;
+    a {
+      color: #5a7b5d;
       text-decoration: none;
     }
 
-    .youtube-icon {
-      margin-top: 15px;
+    a:hover {
+      text-decoration: underline;
     }
 
-    main {
-      max-width: 900px;
-      margin: 40px auto;
-      padding: 0 20px 60px;
+    section {
+      max-width: 950px;
+      margin: 60px auto;
+      padding: 0 25px;
     }
 
-    h3 {
-      color: #5e715b;
-      font-size: 1.4rem;
-      border-bottom: 1px solid #c7d1c7;
-      padding-bottom: 5px;
-      margin-top: 40px;
+    section h2 {
+      font-size: 1.3rem;
+      letter-spacing: 2px;
+      border-bottom: 2px solid #c8d8c2;
+      padding-bottom: 8px;
+      color: #2f3e35;
     }
 
-    .portfolio-item {
-      margin-bottom: 80px;
-      overflow: visible;
-    }
+    ul { list-style: none; padding: 0; }
+    li { margin-bottom: 10px; }
 
-    .portfolio-item p {
-      color: #2f2f2f;
-      line-height: 1.7;
-      font-weight: 300;
+    /* PORTFOLIO */
+    #portfolio {
+      background-color: #f9f9f7;
+      padding: 70px 0;
     }
 
     .portfolio-slider {
@@ -80,24 +82,70 @@
       margin-bottom: 25px;
     }
 
+    .portfolio-slider::-webkit-scrollbar {
+      height: 8px;
+    }
+
+    .portfolio-slider::-webkit-scrollbar-thumb {
+      background: #c5d3c2;
+      border-radius: 10px;
+    }
+
     .portfolio-slider img {
-      height: 280px;
+      height: 400px;
       border-radius: 12px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
       object-fit: cover;
     }
 
-    em {
-      font-style: italic;
-      color: #555;
+    .portfolio-item {
+      margin-bottom: 80px;
+      overflow: visible;
+    }
+
+    .portfolio-item h3 {
+      color: #2f3e35;
+      font-size: 1.4rem;
+    }
+
+    .portfolio-item p {
+      color: #2f2f2f;
+      line-height: 1.7;
+      font-weight: 300;
+    }
+
+    .download-btn {
+      display: inline-block;
+      margin-top: 15px;
+      background-color: #8fae91;
+      color: white;
+      padding: 10px 22px;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background-color 0.3s;
+    }
+
+    .download-btn:hover {
+      background-color: #7da480;
     }
 
     footer {
       text-align: center;
-      padding: 20px;
-      font-size: 0.9rem;
+      font-size: 0.85rem;
       color: #777;
+      padding: 40px 10px;
+      margin-top: 60px;
+      border-top: 1px solid #eee;
     }
+
+    /* Icona YouTube */
+    .youtube-icon {
+      margin-top: 20px;
+    }
+
+    .youtube-icon svg:hover rect {
+      fill: #8fae91;
+    }
+
   </style>
 </head>
 
@@ -110,7 +158,6 @@
       📍 Cavriglia (AR) · 19/02/1999
     </p>
 
-    <!-- Icona YouTube verde salvia -->
     <div class="youtube-icon">
       <a href="https://www.youtube.com/@lucreziadori4895" target="_blank" aria-label="Canale YouTube di Lucrezia Dori">
         <svg viewBox="0 0 100 100" width="36" height="36">
@@ -121,87 +168,130 @@
     </div>
   </header>
 
-  <main>
-    <section class="portfolio-item">
-      <h3>Progetto Tesi</h3>
-      <div class="portfolio-slider">
-        <img src="progetto_tesi/cover.jpg" alt="Cover progetto tesi">
-        <img src="progetto_tesi/lucrezia_dori_tesi.jpg" alt="Tesi Lucrezia Dori">
-      </div>
-      <p>
-        La mia tesi esplora il design come pratica di riparazione, intesa non solo in senso tecnico ma anche sociale, culturale ed ecologico. Analizzo come materiali, processi e oggetti possano creare un ponte tra l’uomo e l’ambiente, ispirandosi ai cicli naturali di nascita, trasformazione e rigenerazione. Il lavoro propone il design come atto di cura, capace di ricucire relazioni e promuovere sostenibilità attraverso pratiche attente ai contesti e alle comunità.
-      </p>
-    </section>
+  <section>
+    <h2>Profilo personale</h2>
+    <p>Designer con formazione artistica e accademica in Interior e Product Design. Appassionata di visualizzazione 3D e progettazione creativa, unisco precisione tecnica e sensibilità estetica per realizzare progetti funzionali e visivamente accattivanti.</p>
+  </section>
 
-    <section class="portfolio-item">
-      <h3>Progetto Fotografia</h3>
-      <div class="portfolio-slider">
-        <img src="_progetto1_fotografia/cover.jpg" alt="Cover progetto fotografia">
-        <img src="_progetto1_fotografia/img1.jpg" alt="">
-        <img src="_progetto1_fotografia/img2.jpg" alt="">
-        <img src="_progetto1_fotografia/img3.jpg" alt="">
-        <img src="_progetto1_fotografia/img4.jpg" alt="">
-        <img src="_progetto1_fotografia/img5.jpg" alt="">
-        <img src="_progetto1_fotografia/img6.jpg" alt="">
-        <img src="_progetto1_fotografia/img7.jpg" alt="">
-        <img src="_progetto1_fotografia/img8.jpg" alt="">
-        <img src="_progetto1_fotografia/img9.jpg" alt="">
-        <img src="_progetto1_fotografia/img10.jpg" alt="">
-        <img src="_progetto1_fotografia/img11.jpg" alt="">
-        <img src="_progetto1_fotografia/img12.jpg" alt="">
-        <img src="_progetto1_fotografia/img13.jpg" alt="">
-        <img src="_progetto1_fotografia/img14.jpg" alt="">
-        <img src="_progetto1_fotografia/img15.jpg" alt="">
-        <img src="_progetto1_fotografia/img16.jpg" alt="">
-      </div>
-      <p>
-        Serie di autoritratti in cui la luce del sole rimbalza su uno specchio generando un riflesso completamente bianco. Bianco, un non-colore, ma che comprende tutti i colori dello spettro.  
-        <em>“È forse perché con la sua indefinitezza, adombra i vuoti e le immensità disumane dell’universo e, in tal modo, ci colpisce alle spalle con il pensiero dell’annullamento, quando contempliamo le bianche profondità della Via Lattea? O è forse perché, nella sua essenza, il bianco non è tanto un colore quanto l’assenza visibile del colore e, al tempo stesso, la fusione di tutti i colori; è forse per questi motivi che c’è una così muta vacuità, piena di significato, in un vasto paesaggio nevoso – un incolore onnicolore d’ateismo dal quale rifuggiamo?…” — Herman Melville, <em>Moby Dick</em>, cap. 42</em>  
-        Partecipazione al <a href="https://www.premiocombat.it/2022/lucrezia-dori-11832" target="_blank">Premio Combat Prize 2022</a>.
-      </p>
-    </section>
+  <section>
+    <h2>Esperienze lavorative</h2>
+    <h3>3D Artist — LuceAtelier (2023 – Presente)</h3>
+    <ul>
+      <li>Modellazione e rendering 3D per progetti di interior design e architettura.</li>
+      <li>Utilizzo di 3ds Max e V-Ray come motore di rendering.</li>
+      <li>Profilo Instagram dello studio: <a href="https://www.instagram.com/_luce.atelier/" target="_blank">@_luce.atelier</a></li>
+    </ul>
+  </section>
 
-    <section class="portfolio-item">
-      <h3>Premio Rometti – Ceramica</h3>
-      <div class="portfolio-slider">
-        <img src="_premio_rometti_ceramica/cover.jpg" alt="Cover Premio Rometti">
-        <img src="_premio_rometti_ceramica/img1.jpg" alt="">
-        <img src="_premio_rometti_ceramica/img2.jpg" alt="">
-        <img src="_premio_rometti_ceramica/img3.jpg" alt="">
-        <img src="_premio_rometti_ceramica/img4.jpg" alt="">
-        <img src="_premio_rometti_ceramica/img5.jpg" alt="">
-        <img src="_premio_rometti_ceramica/img6.jpg" alt="">
-      </div>
-      <p>
-        Partecipazione al bando dell’azienda Rometti in Umbria.  
-        Mi sono ispirata alle opere del fotografo tedesco Karl Blossfeldt, il quale indagava visivamente “la formula dei rapporti segreti tra l’arte e la natura”, presentando una natura intrinsecamente artistica, produttrice di organismi belli e allo stesso tempo funzionali.  
-        Gli equiseti fotografati da Blossfeldt, astratti dal loro contesto ambientale, diventano simbolo di una forma ornamentale, di una natura che si manifesta come arte.  
-        La natura non è esplicitamente rappresentata, ma permane quale paradigma per la nuova realtà che si crea.  
-        Il materiale argilloso prevede la manipolazione diretta della sostanza naturale, che la trasforma in qualcosa di distinto — un oggetto.  
-        Questo vaso diventa la sintesi del fiore dell’equiseto: nella forma si ritrovano le dilatazioni e contrazioni presenti nella sagoma del fiore, realizzate successivamente al processo di tornitura attraverso la sottrazione della materia.
-      </p>
-    </section>
+  <section>
+    <h2>Istruzione</h2>
+    <ul>
+      <li><strong>Diploma Accademico in Design</strong> – Accademia di Belle Arti di Firenze (2019–2023) — <strong>110 e lode</strong></li>
+      <li><strong>Diploma di Maturità Artistica</strong> – Liceo Artistico “Piero della Francesca”, Arezzo — <strong>98/100</strong></li>
+    </ul>
+  </section>
 
-    <section class="portfolio-item">
-      <h3>Progetto Oreficeria</h3>
-      <div class="portfolio-slider">
-        <img src="_progetto2_oreficeria/cover.jpg" alt="Cover progetto oreficeria">
-        <img src="_progetto2_oreficeria/img1.jpg" alt="">
-        <img src="_progetto2_oreficeria/img2.jpg" alt="">
-        <img src="_progetto2_oreficeria/img3.jpg" alt="">
-        <img src="_progetto2_oreficeria/img4.jpg" alt="">
-        <img src="_progetto2_oreficeria/img5.jpg" alt="">
-        <img src="_progetto2_oreficeria/img6.jpg" alt="">
-        <img src="_progetto2_oreficeria/img7.jpg" alt="">
+  <!-- ===================== -->
+  <!--       PORTFOLIO      -->
+  <!-- ===================== -->
+  <section id="portfolio">
+    <div style="max-width: 1100px; margin: 0 auto; padding: 0 20px;">
+      <h2 style="text-align:center; font-size:2rem; margin-bottom:50px;">Portfolio</h2>
+
+      <!-- TESI -->
+      <div class="portfolio-item">
+        <h3>Progetto di Tesi — Design come pratica di riparazione</h3>
+        <div class="portfolio-slider">
+          <img src="progetto_tesi/cover.jpg" alt="Cover tesi">
+        </div>
+        <p>
+          La mia tesi esplora il <strong>design come pratica di riparazione</strong>, intesa non solo in senso tecnico ma anche sociale, culturale ed ecologico. Analizzo come materiali, processi e oggetti possano creare un ponte tra l’uomo e l’ambiente, ispirandosi ai cicli naturali di nascita, trasformazione e rigenerazione. Il lavoro propone il design come <em>atto di cura</em>, capace di ricucire relazioni e promuovere sostenibilità attraverso pratiche attente ai contesti e alle comunità.
+        </p>
+        <a href="progetto_tesi/lucrezia_dori_tesi.pdf" class="download-btn" download>📄 Scarica la tesi</a>
       </div>
-      <p>
-        Serie di anelli realizzati a mano ispirati a forme naturali marine, creati con la tecnica della cera persa.
-      </p>
-    </section>
-  </main>
+
+      <!-- FOTOGRAFIA -->
+      <div class="portfolio-item">
+        <h3>Progetto Fotografico — Autoritratti e Luce</h3>
+        <div class="portfolio-slider">
+          <img src="progetto1_fotografia/cover.jpg">
+          <img src="progetto1_fotografia/img1.jpg">
+          <img src="progetto1_fotografia/img2.jpg">
+          <img src="progetto1_fotografia/img3.jpg">
+          <img src="progetto1_fotografia/img4.jpg">
+          <img src="progetto1_fotografia/img5.jpg">
+          <img src="progetto1_fotografia/img6.jpg">
+          <img src="progetto1_fotografia/img7.jpg">
+          <img src="progetto1_fotografia/img8.jpg">
+          <img src="progetto1_fotografia/img9.jpg">
+          <img src="progetto1_fotografia/img10.jpg">
+          <img src="progetto1_fotografia/img11.jpg">
+          <img src="progetto1_fotografia/img12.jpg">
+          <img src="progetto1_fotografia/img13.jpg">
+          <img src="progetto1_fotografia/img14.jpg">
+          <img src="progetto1_fotografia/img15.jpg">
+          <img src="progetto1_fotografia/img16.jpg">
+        </div>
+        <p>
+          Serie di <strong>autoritratti</strong> realizzati utilizzando uno specchio per riflettere la luce del sole. Il riflesso, completamente bianco, diventa un <em>non-colore</em> che però comprende in sé tutti i colori dello spettro. In stampa, il bianco si trasforma in assenza visiva, evocando un’immagine che esiste soltanto come presenza luminosa: un dialogo tra corpo, luce e materia.
+        </p>
+        <p style="font-size:0.9rem; font-style:italic;">
+          “È forse perché con la sua indefinitezza, adombra i vuoti e le immensità disumane dell’universo e, in tal modo, ci colpisce alle spalle con il pensiero dell’annullamento, quando contempliamo le bianche profondità della Via Lattea? O è forse perché, nella sua essenza, il bianco non è tanto un colore quanto l’assenza visibile del colore e, al tempo stesso, la fusione di tutti i colori; è forse per questi motivi che c’è una così muta vacuità, piena di significato, in un vasto paesaggio nevoso – un incolore onnicolore d’ateismo dal quale rifuggiamo?…”
+          <br>— <strong>Herman Melville, Moby Dick, capitolo 42</strong>
+        </p>
+        <p>
+          Il progetto ha partecipato al <a href="https://www.premiocombat.it/2022/lucrezia-dori-11832" target="_blank"><strong>Premio Combat Prize</strong></a>.
+        </p>
+      </div>
+
+      <!-- ROMETTI -->
+      <div class="portfolio-item">
+        <h3>Premio Rometti — Ceramica ispirata alla natura</h3>
+        <div class="portfolio-slider">
+          <img src="premio_rometti_ceramica/cover.jpg">
+          <img src="premio_rometti_ceramica/img1.jpg">
+          <img src="premio_rometti_ceramica/img2.jpg">
+          <img src="premio_rometti_ceramica/img3.jpg">
+          <img src="premio_rometti_ceramica/img4.jpg">
+          <img src="premio_rometti_ceramica/img5.jpg">
+          <img src="premio_rometti_ceramica/img6.jpg">
+        </div>
+        <p>
+          Mi sono ispirata alle opere del fotografo tedesco <strong>Karl Blossfeldt</strong>, il quale indagava visivamente “la formula dei rapporti segreti tra l’arte e la natura”, presentando una natura intrinsecamente artistica, produttrice di organismi belli e allo stesso tempo funzionali. La ritmicità della pianta e la sua forma è costruita secondo una logica e un’utilità necessaria per la sua sopravvivenza.
+        </p>
+        <p>
+          Gli equiseti fotografati da Blossfeldt, astratti dal loro contesto ambientale, diventano simbolo di una forma ornamentale, di una natura che si manifesta come arte. La natura non è esplicitamente rappresentata, ma permane quale paradigma per la nuova realtà che si crea. 
+        </p>
+        <p>
+          Il concetto nasce dal <strong>recupero dell’elemento naturale</strong> per ricercare un equilibrio tra artificio e natura, tra oggettualità e naturalità. Il materiale argilloso prevede la manipolazione diretta della sostanza naturale che lo trasforma in qualcosa di distinto, in un oggetto. Questo vaso diventa la sintesi del fiore dell’equiseto, realizzato successivamente al processo di tornitura attraverso la sottrazione della materia.
+        </p>
+        <p>
+          Progetto realizzato per la partecipazione al <a href="https://www.rometti.it/it/news/premio-rometti-20-21premio-dei-premitriennale/" target="_blank"><strong>Premio Rometti</strong></a>, bandito dall’azienda Rometti in Umbria.
+        </p>
+      </div>
+
+      <!-- OREFICERIA -->
+      <div class="portfolio-item">
+        <h3>Progetto di Oreficeria — Forme Marine</h3>
+        <div class="portfolio-slider">
+          <img src="progetto2_oreficeria/cover.jpg">
+          <img src="progetto2_oreficeria/img1.jpg">
+          <img src="progetto2_oreficeria/img2.jpg">
+          <img src="progetto2_oreficeria/img3.jpg">
+          <img src="progetto2_oreficeria/img4.jpg">
+          <img src="progetto2_oreficeria/img5.jpg">
+          <img src="progetto2_oreficeria/img6.jpg">
+          <img src="progetto2_oreficeria/img7.jpg">
+        </div>
+        <p>
+          Collezione di <strong>anelli ispirati alle forme naturali marine</strong>, realizzati interamente a mano con la tecnica della <em>cera persa</em>. Le strutture organiche evocano coralli e conchiglie, trasformando la materia in piccole sculture preziose. Ogni pezzo è unico, modellato per catturare il ritmo naturale delle forme organiche e unire la sensibilità del design contemporaneo all’artigianato orafa.
+        </p>
+      </div>
+    </div>
+  </section>
 
   <footer>
-    © 2025 Lucrezia Dori – Tutti i diritti riservati.
+    © 2025 Lucrezia Dori — Tutti i diritti riservati
   </footer>
 </body>
 </html>
