@@ -133,7 +133,7 @@
       border-top: 1px solid #eee;
     }
 
-    /* --- Nuovo bottone YouTube verde salvia (originale) --- */
+    /* Nuovo bottone YouTube verde salvia */
     .youtube-icon {
       display: flex;
       justify-content: center;
@@ -141,24 +141,29 @@
     }
 
     .youtube-link {
-      width: 27px;
-      height: 18px;
-      border-radius: 5px;
-      background-color: #a6bfa4;
+      width: 36px;
+      height: 36px;
+      background-color: transparent;
+      border: 2px solid #a6bfa4;
+      border-radius: 50%;
       display: flex;
       align-items: center;
       justify-content: center;
-      transition: background-color 0.3s ease, transform 0.2s ease;
-    }
-
-    .youtube-link:hover {
-      background-color: #8fae91;
-      transform: scale(1.05);
+      transition: all 0.3s ease;
     }
 
     .youtube-link svg {
-      width: 12px;
-      height: 12px;
+      width: 18px;
+      height: 18px;
+      fill: #a6bfa4;
+      transition: fill 0.3s ease;
+    }
+
+    .youtube-link:hover {
+      background-color: #a6bfa4;
+    }
+
+    .youtube-link:hover svg {
       fill: white;
     }
   </style>
@@ -173,27 +178,120 @@
       📍 Cavriglia (AR) · 19/02/1999
     </p>
 
-    <!-- Bottone YouTube originale (play bianco su sfondo verde salvia) -->
+    <!-- Nuovo bottone YouTube -->
     <div class="youtube-icon">
       <a class="youtube-link" href="https://www.youtube.com/@lucreziadori4895" target="_blank" aria-label="YouTube">
-        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-          <path d="M23.5 6.2s-.2-1.6-.8-2.3c-.7-.8-1.5-.8-1.9-.9C17.7 2.7 12 2.7 12 2.7h-.1s-5.7 0-8.8.3c-.5 0-1.3.1-1.9.9C.7 4.6.5 6.2.5 6.2S0 8.1 0 10v4c0 1.9.5 3.8.5 3.8s.2 1.6.8 2.3c.7.8 1.6.8 2 .9 1.5.1 8.7.3 8.7.3s5.7 0 8.8-.3c.5 0 1.3-.1 1.9-.9.6-.7.8-2.3.8-2.3S24 15.9 24 14v-4c0-1.9-.5-3.8-.5-3.8zM9.6 15.3V8.7l6.4 3.3-6.4 3.3z"/>
+        <svg viewBox="0 0 24 24">
+          <path d="M23.498 6.186a2.972 2.972 0 00-2.09-2.103C19.691 3.5 12 3.5 12 3.5s-7.691 0-9.408.583a2.972 2.972 0 00-2.09 2.103A31.533 31.533 0 000 12a31.533 31.533 0 00.502 5.814 2.972 2.972 0 002.09 2.103C4.309 20.5 12 20.5 12 20.5s7.691 0 9.408-.583a2.972 2.972 0 002.09-2.103A31.533 31.533 0 0024 12a31.533 31.533 0 00-.502-5.814zM9.75 15.02V8.98l6.5 3.02-6.5 3.02z"/>
         </svg>
       </a>
     </div>
   </header>
 
-  <!-- resto del codice invariato -->
   <section>
     <h2>Profilo personale</h2>
     <p>Designer con formazione artistica e accademica in Interior e Product Design. Appassionata di visualizzazione 3D e progettazione creativa, unisco precisione tecnica e sensibilità estetica per realizzare progetti funzionali e visivamente accattivanti.</p>
   </section>
 
-  <!-- ... resto del contenuto come nel tuo file ... -->
+  <section>
+    <h2>Esperienze lavorative</h2>
+    <h3>3D Artist — LuceAtelier (2023 – Presente)</h3>
+    <ul>
+      <li>Modellazione e rendering 3D per progetti di interior design e architettura.</li>
+      <li>Utilizzo di 3ds Max e V-Ray come motore di rendering.</li>
+      <li>Profilo Instagram dello studio: <a href="https://www.instagram.com/_luce.atelier/" target="_blank">@_luce.atelier</a></li>
+      <li>Sito web dello studio: <a href="https://www.luceatelier.com/" target="_blank">www.luceatelier.com</a></li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Istruzione</h2>
+    <ul>
+      <li><strong>Diploma Accademico in Design</strong> – Accademia di Belle Arti di Firenze (2019–2023) — <strong>110 e lode</strong></li>
+      <li><strong>Diploma di Maturità Artistica</strong> – Liceo Artistico “Piero della Francesca”, Arezzo — <strong>98/100</strong></li>
+    </ul>
+  </section>
+
+  <section id="portfolio">
+    <div style="max-width: 1100px; margin: 0 auto; padding: 0 20px;">
+      <h2 style="text-align:center; font-size:2rem; margin-bottom:50px;">Portfolio</h2>
+
+      <!-- TESI -->
+      <div class="portfolio-item">
+        <h3>Progetto di Tesi — Design come pratica di riparazione</h3>
+        <div class="portfolio-slider">
+          <img src="progetto_tesi/Cover.jpg" alt="Cover tesi">
+        </div>
+        <p>
+          La mia tesi esplora il design come pratica di riparazione, intesa non solo in senso tecnico ma anche sociale, culturale ed ecologico. Analizzo come materiali, processi e oggetti possano creare un ponte tra l’uomo e l’ambiente, ispirandosi ai cicli naturali di nascita, trasformazione e rigenerazione. Il lavoro propone il design come atto di cura, capace di ricucire relazioni e promuovere sostenibilità attraverso pratiche attente ai contesti e alle comunità.
+        </p>
+        <a href="progetto_tesi/lucrezia_dori_tesi.pdf" class="download-btn" download>📄 Scarica la tesi</a>
+      </div>
+
+      <!-- FOTOGRAFIA -->
+      <div class="portfolio-item">
+        <h3>Progetto Fotografico — Autoritratti e Luce</h3>
+        <div class="portfolio-slider">
+          <img src="progetto1_fotografia/img9.jpg" alt="Cover progetto fotografico">
+          <img src="progetto1_fotografia/img2.jpg">
+          <img src="progetto1_fotografia/img3.jpg">
+          <img src="progetto1_fotografia/img4.jpg">
+          <img src="progetto1_fotografia/img5.jpg">
+          <img src="progetto1_fotografia/img6.jpg">
+          <img src="progetto1_fotografia/img10.jpg">
+          <img src="progetto1_fotografia/img12.jpg">
+          <img src="progetto1_fotografia/img13.jpg">
+          <img src="progetto1_fotografia/img14.jpg">
+        </div>
+        <p>
+          Serie di autoritratti dove la luce del sole rimbalza su uno specchio generando un riflesso totalmente bianco. Bianco. Un non-colore. Ma che comprende tutti i colori dello spettro.
+          <em>“È forse perché con la sua indefinitezza, adombra i vuoti e le immensità disumane dell’universo…” — Herman Melville, Moby Dick, capitolo 42.</em><br>
+          Il progetto ha partecipato al <a href="https://www.premiocombat.it/2022/lucrezia-dori-11832" target="_blank" style="color:#1a3a2a; font-weight:600;">Premio Combat Prize</a>.
+        </p>
+      </div>
+
+      <!-- ROMETTI -->
+      <div class="portfolio-item">
+        <h3>Premio Rometti — Ceramica ispirata alla natura</h3>
+        <div class="portfolio-slider">
+          <img src="premio_rometti_ceramica/cover.jpg">
+          <img src="premio_rometti_ceramica/img1.jpg">
+          <img src="premio_rometti_ceramica/img3.jpg">
+          <img src="premio_rometti_ceramica/img4.jpg">
+          <img src="premio_rometti_ceramica/img5.jpg">
+          <img src="premio_rometti_ceramica/img6.jpg">
+        </div>
+        <p>
+          Mi sono ispirata alle opere del fotografo tedesco Karl Blossfeldt, il quale indagava visivamente “la formula dei rapporti segreti tra l’arte e la natura”, presentando una natura intrinsecamente artistica, produttrice di organismi belli e allo stesso tempo funzionali.  
+          La ritmicità della pianta e la sua forma è costruita secondo una logica e un’utilità necessaria per la sua sopravvivenza. Gli equiseti fotografati da Blossfeldt, astratti dal loro contesto ambientale, diventano simbolo di una forma ornamentale, di una natura che si manifesta come arte.  
+          Il progetto è stato realizzato per la partecipazione a un bando presso l’azienda Rometti in Umbria.  
+          <a href="https://www.rometti.it/it/news/premio-rometti-20-21premio-dei-premitriennale/" target="_blank" style="color:#1a3a2a; font-weight:600;">→ Premio Rometti</a>
+        </p>
+      </div>
+
+      <!-- OREFICERIA -->
+      <div class="portfolio-item">
+        <h3>Progetto di Oreficeria — Forme Marine</h3>
+        <div class="portfolio-slider">
+          <img src="progetto2_oreficeria/cover.jpg">
+          <img src="progetto2_oreficeria/img1.jpg">
+          <img src="progetto2_oreficeria/img2.jpg">
+          <img src="progetto2_oreficeria/img3.jpg">
+          <img src="progetto2_oreficeria/img4.jpg">
+          <img src="progetto2_oreficeria/img5.jpg">
+          <img src="progetto2_oreficeria/img6.jpg">
+          <img src="progetto2_oreficeria/img7.jpg">
+        </div>
+        <p>
+          Una collezione di anelli ispirati alle forme naturali marine, realizzati interamente a mano con la tecnica della cera persa. Le strutture organiche, modellate come piccole sculture, evocano la morfologia di coralli e conchiglie, trasformando la materia in preziosa testimonianza del mondo sommerso.
+        </p>
+      </div>
+
+    </div>
+  </section>
 
   <footer>
     © 2025 Lucrezia Dori — Tutti i diritti riservati
   </footer>
 </body>
 </html>
-
